@@ -33,15 +33,15 @@ public class Eleve {
 	{
 		return nom;
 	}
-	public ArrayList<Integer> getListNotes()
+	public  ArrayList<Integer> getListNotes()
 	{
 		
-		return null;
+		return list ;
 		 
 	}
 	public String toString()
 	{
-		return "le nom  " + nom + " les notes :  " + getListNotes() + " la moyenne : " + moyenne;
+		return "le nom  " + nom + " les notes :  " + getListNotes() + " la moyenne : " + getMoyenne();
 	}
 	
 	public static void main(String[] args) {
@@ -50,27 +50,20 @@ public class Eleve {
 		
 		Eleve eleve1 = new Eleve("Ishak");
 		
-		System.out.print(eleve1.toString());
+		
 		
 		
 		int i=1 ;
 		int compt=1 ;
-		
-		
 		while (i!=0) {
 			int nb ; 
 			System.out.println("entrer la note "+compt+": ") ;
 			nb= sc.nextInt() ;
 			eleve1.ajouterNote(nb);
 	
-			i= sc.nextInt() ;
-		if (i == 0)
-		{
-			System.out.print("le programme sera arrete ");
-		}
 			
-		
-		//
+		System.out.print("si vous voulez entrer la note saisiser nombre different de 0: ");
+		i= sc.nextInt() ;
 		compt ++ ;
 		}
 		
@@ -80,7 +73,8 @@ public class Eleve {
 		    moyenne= (double)moyenne/(index+1) ;
 			
 		}
-		System.out.println(" "+getMoyenne());
+		
+		System.out.print(eleve1.toString());
 	}
 	
 }
