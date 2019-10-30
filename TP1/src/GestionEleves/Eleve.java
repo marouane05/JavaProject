@@ -2,7 +2,7 @@ package GestionEleves;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import TP1.exe1;
+
 
 public class Eleve {
 
@@ -60,9 +60,7 @@ public class Eleve {
 			System.out.println("entrer la note "+compt+": ") ;
 			nb= sc.nextInt() ;
 			eleve1.ajouterNote(nb);
-	
-			
-		System.out.print("si vous voulez entrer la note saisiser nombre different de 0: ");
+			System.out.print("si vous voulez entrer la note saisiser nombre different de 0: ");
 		i= sc.nextInt() ;
 		compt ++ ;
 		}
