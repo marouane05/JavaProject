@@ -15,7 +15,7 @@ public class file {
 			if(e.isDirectory()) {
 				System.out.printf("%d - %20s \t",n+1,e.getName());
 				n++;
-				if ((n%4)==0) System.out.println();
+				if ((n%4)==0) System.out.println("");
 			}
 		
 		}   
