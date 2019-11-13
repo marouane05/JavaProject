@@ -5,7 +5,7 @@ public class Fout {
 	public static void main(String[] args) {
 		 try{    
              FileOutputStream fout=new FileOutputStream("FileOut.txt");    
-             String s="Test is success";    
+             String s="Test is success yes";    
              byte b[]=s.getBytes();
              fout.write(b);    
              fout.close();    
