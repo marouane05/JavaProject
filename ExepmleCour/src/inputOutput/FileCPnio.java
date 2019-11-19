@@ -20,16 +20,19 @@ public class FileCPnio {
 		long time= System.currentTimeMillis();
 		while(bis.read()!= -1) {
 			
-		System.out.println("temps d'execution vs bufferedInputStream"+ (System.currentTimeMillis()-time ));
+	System.out.println("temps d'execution vs bufferedInputStream"+ (System.currentTimeMillis()-time ));
 		fis= new FileInputStream(new File("fichier.txt"));
 		fc=fis.getChannel() ; 
 		int size= (int) fc.size() ;
 		ByteBuffer bBuf=ByteBuffer.allocate(size);
 		time=System.currentTimeMillis() ;
 		fc.read(bBuf) ;
-		bBuf.flip();
+	//	bBuf.flip();
 		System.out.println("temps d execution avec filechannel: "+(System.currentTimeMillis()-time )) ;
 		byte[] tab= bBuf.array() ; 
+		
+		
+		
 		}
 		
 
