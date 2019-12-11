@@ -21,3 +21,5 @@ public class Client {
 	}
 
 }
+
+/*  Excercice Vecteur Client/serveur + thread + temps ecoulé entre chaque operation + TCPClientTest +  */

@@ -5,7 +5,7 @@ public class ReadNetworkFileSock {
 
 	public static void main(String[] args) {
 		
-		Socket soc = null ;		
+		Socket soc = null ;	 	
 		try {
 			soc = new Socket("www.este.ucam.ac.ma",80);
 			String req = "GET / HTTP/1.1\r\n";
@@ -29,3 +29,13 @@ public class ReadNetworkFileSock {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
